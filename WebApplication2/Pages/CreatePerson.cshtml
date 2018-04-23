@@ -1,0 +1,23 @@
+﻿@page
+@model WebApplication2.Pages.CreatePersonModel
+@{
+    ViewData["Title"] = "CreatePerson";
+}
+
+<h2>CreatePerson</h2>
+
+<form method="post">
+    <div asp-validation-summary="All"></div>
+    <label class="control-label" asp-for="Persons.Name"></label>
+    <input type="text" asp-for="Persons.Name" class="form-control" />
+    <br />
+
+    <label class="control-label" asp-for="Persons.Addres"></label>
+    <input type="text" asp-for="Persons.Addres" class="form-control" />
+    <br />
+    <label class="control-label" asp-for="Persons.Phone"></label>
+    <input type="text" asp-for="Persons.Phone" class="form-control" />
+    <br />
+    <button class="btn btn-success btn-lg" type="submit">Save</button>
+</form>
+
